@@ -1,0 +1,66 @@
+.container{
+    background-color: lightgray;
+}
+
+@media only screen and (max-width: 500px) {
+    .link{
+        display: inline;
+    }
+    .subtitle{
+        text-align: left;
+        height: 35px;
+        font-size: 30px;
+        text-decoration: underline;
+    }
+}
+@media only screen and (min-width: 501px) {
+    .link{
+        text-align: center;
+        display: block;
+    }
+    .subtitle{
+        text-align: center;
+        height: 35px;
+        font-size: 30px;
+        text-decoration: underline;
+    }
+}
+
+table, th, td{
+    border: 1px solid black;
+}
+
+#title{
+    text-align: center;
+    height: 40px;
+    border: 5px solid blue;
+}
+
+.info{
+    vertical-align: left;
+    font-size: 25px;
+}
+
+.photos{
+    display: grid;
+    width: 100%;
+    object-fit: cover;
+    grid-template-columns: 2;
+    grid-template-rows: 2;
+}
+#track{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}   
+#basketball{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+#swim{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+#cafe{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
